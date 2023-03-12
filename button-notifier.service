@@ -1,0 +1,9 @@
+[Unit]
+Description=example systemd service unit file.
+
+[Service]
+WorkingDirectory=INSTALL_DIR
+ExecStart=python3 button_notifier.py
+
+[Install]
+WantedBy=multi-user.target
